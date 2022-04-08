@@ -535,7 +535,7 @@ header {
     position: relative;
     overflow: hidden;
     height: 500px;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
     margin-top: 2rem;
     border-radius: 0.5rem;
     transform: translateY(10px);
