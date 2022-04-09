@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px; /*1rem*/
+    font-size: 16px;
+    /*1rem*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -60,15 +61,21 @@ header {
 
 @media screen and (max-width:992px) {
     .navbar button {
-        padding:  0.6rem 1rem;
+        padding: 0.6rem 1rem;
         font-size: 0.7rem;
         margin-left: 0;
+    }
+
+    .navbar-brand img {
+        max-height: 30px;
+        max-width: 70px;
     }
 }
 
 @media screen and (max-width:768px) {
     .navbar-brand img {
-        height: 40px;
+        height: 30px;
+        width: 70px;
     }
 }
 
@@ -161,21 +168,25 @@ header {
     border: solid 2px #fd4766;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
     .carousel-caption h1 {
         font-size: 4rem;
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
     .carousel-caption h1 {
         font-size: 3rem;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .carousel-caption h1 {
         font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
     }
 }
 
@@ -189,21 +200,21 @@ header {
   background-color: #fd4766;
   
   /* Create the gradient. */
-  background: linear-gradient(90deg, rgba(28,153,254,1) 45%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 55%);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 45%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 55%);
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
 
-  letter-spacing: 0.2rem;
-  font-weight: 500;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    letter-spacing: 0.2rem;
+    font-weight: 500;
 }
 
 .service__text h1 {
@@ -291,17 +302,17 @@ header {
 } */
 
 .project__text p:first-of-type {
-  background: linear-gradient(90deg, rgba(28,153,254,1) 45%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 55%);
-  background-size: 100%;
-  background-repeat: repeat;
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 45%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 55%);
+    background-size: 100%;
+    background-repeat: repeat;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 
-  letter-spacing: 0.2rem;
-  font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
 }
 
 .project__text h1 {
@@ -376,7 +387,7 @@ header {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(360deg, rgba(253,71,102,0.8575805322128851) 26%, rgba(255,255,255,0) 75%);
+    background: linear-gradient(360deg, rgba(253, 71, 102, 0.8575805322128851) 26%, rgba(255, 255, 255, 0) 75%);
     opacity: 0;
 }
 
@@ -390,7 +401,8 @@ header {
     transition: all 0.4s;
 }
 
-.project__item p:first-of-type, .project__item h3 {
+.project__item p:first-of-type,
+.project__item h3 {
     transform: translateY(80px);
     transition: all 0.5s;
 }
@@ -404,7 +416,8 @@ header {
     transform: translateY(30px);
 }
 
-.project__item:hover p:first-of-type, .project__item:hover h3 {
+.project__item:hover p:first-of-type,
+.project__item:hover h3 {
     transform: translateY(20px);
 }
 
@@ -451,14 +464,14 @@ header {
 }
 
 .about__right .right__title {
-    background: linear-gradient(90deg, rgba(28,153,254,1) 25%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 75%);
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 25%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 75%);
     background-size: 100%;
     background-repeat: repeat;
 
     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
-     -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
     letter-spacing: 0.1rem;
     font-weight: 500;
@@ -485,7 +498,7 @@ header {
 }
 
 .about__right__nav .nav__menu .nav .nav-item .nav-link.active {
-    background-color:#fd4766;
+    background-color: #fd4766;
     border-radius: 3rem;
     padding: 0.5rem 2rem;
     color: white;
@@ -609,14 +622,14 @@ header {
 }
 
 .news__text p:first-of-type {
-    background: linear-gradient(90deg, rgba(28,153,254,1) 25%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 75%);
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 25%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 75%);
     background-size: 100%;
     background-repeat: repeat;
 
     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
-     -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
     letter-spacing: 0.1rem;
     font-weight: 500;
@@ -666,7 +679,7 @@ header {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(360deg, rgba(253,71,102,0.8575805322128851) 26%, rgba(255,255,255,0) 75%);
+    background: linear-gradient(360deg, rgba(253, 71, 102, 0.8575805322128851) 26%, rgba(255, 255, 255, 0) 75%);
     opacity: 0;
     transition: all 0.5s;
 }
@@ -753,14 +766,14 @@ header {
 }
 
 .clients__text p:first-of-type {
-    background: linear-gradient(90deg, rgba(28,153,254,1) 25%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 75%);
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 25%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 75%);
     background-size: 100%;
     background-repeat: repeat;
 
     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
-     -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
     letter-spacing: 0.1rem;
     font-weight: 500;
@@ -831,7 +844,7 @@ header {
 }
 
 .clients__item:hover .clients__bg {
-    background-color:#fd4766;
+    background-color: #fd4766;
     opacity: 1;
     transform: scale(1.1);
     z-index: 1;
@@ -900,7 +913,7 @@ footer {
     left: 0;
     width: 0;
     height: 1px;
-    background: linear-gradient(90deg, rgba(28,153,254,1) 25%, rgba(118,68,255,1) 50.19%, rgba(253,71,102,1) 75%);
+    background: linear-gradient(90deg, rgba(28, 153, 254, 1) 25%, rgba(118, 68, 255, 1) 50.19%, rgba(253, 71, 102, 1) 75%);
     transition: all 0.5s;
 }
 
@@ -939,8 +952,48 @@ footer {
     transition: all 0.5s;
 }
 
-.contacts__social i:hover{
+.contacts__social i:hover {
     transform: translateY(0);
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 991px) {
+    .footer__bottom .copyright p {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts__social i {
+        margin: 0 0.3rem;
+    }
+} 
+
+/* BackToTop */
+.backToTop i {
+    font-size: 1.2rem;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    color: #fd4766;
+    bottom: 30px;
+    right: 30px;
+    border: solid 2px #fd4766;
+}
+
+.backToTop {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
